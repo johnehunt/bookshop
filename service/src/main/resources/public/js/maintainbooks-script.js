@@ -4,7 +4,6 @@ $(document).ready(function() {
       // Stop form from submitting normally
       event.preventDefault();
 
-      console.log(event)
       let url = "http://localhost:8080/bookshop";
 
       let obj = $(this).serializeJSON();
