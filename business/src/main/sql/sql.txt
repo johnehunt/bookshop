@@ -1,0 +1,22 @@
+CREATE DATABASE `bookstore`;
+
+CREATE USER 'user'@'localhost' IDENTIFIED by 'user123';
+GRANT ALL on books.* TO 'user'@'localhost';
+
+CREATE TABLE `books` (
+  `isbn` varchar(45) NOT NULL,
+  `author` varchar(45) DEFAULT NULL,
+  `title` varchar(45) NOT NULL,
+  `price` decimal(2,0) DEFAULT NULL,
+  PRIMARY KEY (`isbn`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+
+SELECT `books`.`isbn`,
+    `books`.`author`,
+    `books`.`title`,
+    `books`.`price`
+FROM `bookstore`.`books`;
+
+
+
