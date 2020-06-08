@@ -6,3 +6,6 @@
 /taregt
 *.iml
 /.idea
+/business/target/
+/domain/target/
+/service/target/
