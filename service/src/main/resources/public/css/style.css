@@ -1,0 +1,22 @@
+.mailto {
+    font-family: 'Courier New',Courier,monospace;
+    background-color: green;
+    font-size: 18px;
+    text-align: left;
+}
+.hover {
+    cursor: pointer;
+}
+.button {
+    background-color: gray;
+    background-position: center center;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: bold;
+    color: blue;
+    text-align: center;
+    vertical-align: middle;
+}
+p.error {
+  color: red;
+}

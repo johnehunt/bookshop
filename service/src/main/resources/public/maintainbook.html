@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <script src="js/jquery.serializejson.js"></script>
+    <script src="js/maintainbooks-script.js"></script>
+    <title>Book Maintenance Page</title>
+</head>
+<body>
+<h2>Book Maintenance</h2>
+<p>Please enter book details to Add / Update a Book</p>
+<p>
+    <form id="maintain-form" action="">
+        ISBN <input type="text" name="isbn:number" value="321" id="isbn" type="number"/> <br />
+        Title <input type="text" name="title" value="SOA" id="title"/> <br />
+        Author <input type="text" name="author" value="Adam" id="author"/> <br />
+        Price <input type="text" name="price:number" value="13.99" id="price"/> <br />
+        <p>
+            <button type="submit" name="add" value="add">Update</button>
+        </p>
+    </form>
+</p>
+</body>
+</html>
