@@ -1,15 +1,10 @@
 $(document).ready(function() {
-  $("#show").hover(
-    function() {
-      $(this).addClass("hover");
-    },
-    function() {
-      $(this).removeClass("hover");
-    }
-  );
+
   $("#show").click(function() {
+
     console.log("running click on show");
-    event.preventDefault();
+    event.preventDefault(); // stop default processing of button
+
     $.get("http://localhost:8080/bookshop/list", function(books) {
           $("#booklist").empty();
           let html = "<div class='book'>";
@@ -25,5 +20,7 @@ $(document).ready(function() {
             html += "</div>";
             $("#booklist").append($(html));
       });
+
     });
+
   });
