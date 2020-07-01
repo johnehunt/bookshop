@@ -11,6 +11,10 @@ CREATE TABLE `books` (
   PRIMARY KEY (`isbn`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
+INSERT INTO `bookstore`.`books` (`isbn`, `author`, `title`, `price`) VALUES ('1', 'John Smith', 'Java Introduction', '10');
+INSERT INTO `bookstore`.`books` (`isbn`, `author`, `title`, `price`) VALUES ('2', 'Denise Byrne', 'JavaScript Introduction', '12');
+INSERT INTO `bookstore`.`books` (`isbn`, `author`, `title`, `price`) VALUES ('3', 'Adam Jones', 'Live Java', '11');
+INSERT INTO `bookstore`.`books` (`isbn`, `author`, `title`, `price`) VALUES ('4', 'Jasmine Davies', 'Kotlin Introduction', '14');
 
 SELECT `books`.`isbn`,
     `books`.`author`,
