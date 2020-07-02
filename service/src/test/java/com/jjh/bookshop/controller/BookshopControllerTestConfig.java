@@ -11,5 +11,4 @@ import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 @EnableJpaRepositories("com.jjh.bookshop.repository")
 @EnableAutoConfiguration
 @ComponentScan(basePackages = "com.jjh.bookshop.controller,com.jjh.bookshop.service")
-public class BookshopControllerTestConfig {
-}
+public class BookshopControllerTestConfig { }
